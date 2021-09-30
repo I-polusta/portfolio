@@ -6,76 +6,30 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
+html { overflow-y: scroll; }
+body { position: absolute; }
 body{
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  max-height: max-content;
   background: #ffffff;
 }
-.animation{
-  display: flex;
+.one{
+  position: sticky;
 }
-.animation .text-hold{
-  color: rgb(0, 0, 0);
-  font-size: 60px;
-  font-weight: 400;
-}
-.animation .text-flow{
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
-}
-.text-flow li{
-  list-style: none;
-  color: #000000;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
-}
-@keyframes slide {
-  100%{
-    top: -360px;
-  }
-}
-.text-flow li span{
-  position: relative;
-  margin: 5px 0;
-  line-height: 90px;
-}
-.text-flow li span::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #fafafa;
-  border-left: 2px solid #000000;
-  animation: typing 3s steps(10) infinite;
-}
-@keyframes typing {
-  40%, 60%{
-    left: calc(100% + 30px);
-  }
-  100%{
-    left: 0;
-  }
-}
-
-
 nav{
-  background: #7c4c4c;
+  background: #bdfffd;
   width: 100%;
   height: 80px;
 }
 
 label.logo{
+  align-items: flex-start;
   font-size: 35px;
-  font-weight: bold;
-  color: white;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
   padding: 0 100px;
   line-height: 80px;
 }
@@ -90,7 +44,7 @@ nav li{
   line-height: 80px;
 }
 nav a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -99,12 +53,12 @@ nav a {
 }
 
 a.active,a:hover{
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   transition: 0.5s;
 }
 .checkbtn{
   font-size: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -122,7 +76,18 @@ a.active,a:hover{
   nav ul li a{
     font-size: 16px;
   }
-  
+ 
+  #check:checked  ~ .text-flow li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+    background: #272848;
+  } 
 }
 
 @media (max-width: 858px){
@@ -135,7 +100,7 @@ a.active,a:hover{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rebeccapurple;
+    background: #9ffff5;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -148,9 +113,162 @@ a.active,a:hover{
   }
   a:hover,a.active{
     background: none;
-    color: red;
+    color:#6D71f9;
   }
   #check:checked ~ ul{
-    left: 0; ;
+    left: 0; 
+  }
+
+  #check:checked  ~ .text-flow li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+    background: #9ffff5;
+  }  .avt{
+    display: none;
   }
 }
+
+.avt{
+  position: absolute;
+  width: 60px;
+  right: 2px;
+}
+
+.second{
+  position: relative;
+  height: 800px;
+  background: #9ffff5;
+}
+  .sec__img{
+    width: 50%;
+  }
+  .container{
+    display: flex;
+  }
+
+  .head{
+    position: relative;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+padding-left: 200px;
+top: -100px;
+  }
+
+  .head h2{
+    font-size: 58px;
+  text-align: center;
+    font-weight: 500;
+    padding-right: 100%;
+  }
+  .head h3{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding-right: 100%;
+    width: max-content;
+  }
+  .animation{
+    position: relative;
+    right: 23px;
+  }
+  .animation .text-hold{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .animation .text-flow{
+    margin-left: 25px;
+    height: 90px;
+    line-height: 80px;
+    overflow: hidden;
+  }
+  .text-flow li{
+    list-style: none;
+    color: #5e6973;
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    top: -10%;
+
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .text-flow li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .text-flow li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 100%;
+    width: 100%;
+    background: #9ffff5;
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+  
+
+  .third__container h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+  }
+
+  .wrap{
+    display: flex;
+    padding: 20px;
+   justify-content: space-around;
+  }
+  .wrap img{
+  
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  .wrap span{
+    padding: 60px;
+    width: 50%;
+  }
+
+  .fourth{
+    background: #6ABEA7;
+  }
+.fourth h1{    text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+  
+ .card {
+   display: flex;
+   flex-direction: column;
+     flex: 0 1 24%;
+ }
