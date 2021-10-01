@@ -16,13 +16,14 @@ body{
   max-height: max-content;
   background: #ffffff;
 }
-.one{
-  position: sticky;
-}
 nav{
+  z-index: 100;
   background: #bdfffd;
   width: 100%;
   height: 80px;
+  position: fixed;
+  top: 0;
+
 }
 
 label.logo{
@@ -69,6 +70,17 @@ a.active,a:hover{
   display: none;
 }
 @media (max-width: 952px){
+
+
+.second, .sec__img , .head{
+  width: 100%;
+  margin: auto;
+}
+  .sec__img{
+  width: 100%
+}
+
+
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -90,49 +102,7 @@ a.active,a:hover{
   } 
 }
 
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-    cursor: pointer;
 
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #9ffff5;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  a:hover,a.active{
-    background: none;
-    color:#6D71f9;
-  }
-  #check:checked ~ ul{
-    left: 0; 
-  }
-
-  #check:checked  ~ .text-flow li span::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    
-    border-left: 2px solid #000000;
-    animation: typing 3s steps(10) infinite;
-    background: #9ffff5;
-  }  .avt{
-    display: none;
-  }
-}
 
 .avt{
   position: absolute;
@@ -141,12 +111,13 @@ a.active,a:hover{
 }
 
 .second{
-  position: relative;
-  height: 800px;
+height: 80vh;
   background: #9ffff5;
 }
   .sec__img{
-    width: 50%;
+    margin: auto;
+    padding: 80px;
+    width: 40%;
   }
   .container{
     display: flex;
@@ -415,25 +386,25 @@ top: -100px;
   overflow: hidden;
 }    
 
-.sixth{
+.seventh{
   margin: auto;
   background: #5E6973;
 }
 
-.sixth h1{
+.seventh h1{
   text-align: center;
   font-size: 50px;
   padding-top: 10px;
 }
 
-.sixth__container{
+.seventh__container{
   margin: auto;
   width: auto;
   display: flex;
   justify-content: space-around;
 }
 
-.sixth__container img{
+.seventh__container img{
   padding-top: -30px;
   border: 1px solid black;
   border-radius: 80%;
@@ -464,7 +435,87 @@ button{
   border: 2px solid black;
   background-color: #31363a;
 }
-
-.sixth h3{
+.last h3{
   text-align: center;
+}
+
+.sixth h1{
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 10px;
+}
+ .sixth{
+  background: #6ABEA7;
+  padding-bottom: 40px;
+ }
+
+.sixth__container{
+  
+  display: flex;
+  margin: auto;
+  column-gap: 20px;
+  justify-content: center;
+}
+ .rr, .cc{
+display: flex;
+flex-direction: column;
+}
+.rr span{
+  margin: auto;
+  font-size: 30px;
+}
+progress{
+  padding: 30px;
+  width: 400px;
+  margin: auto;
+}
+
+@media (max-width: 858px){
+
+.sec__img{
+  width: 30%;
+}
+
+  .checkbtn{
+    display: block;
+    cursor: pointer;
+
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9ffff5;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  a:hover,a.active{
+    background: none;
+    color:#6D71f9;
+  }
+  #check:checked ~ ul{
+    left: 0; 
+  }
+
+  #check:checked  ~ .text-flow li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+    background: #9ffff5;
+  }  .avt{
+    display: none;
+  }
 }
