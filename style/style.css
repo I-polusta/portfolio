@@ -1,32 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
-html { overflow-y: scroll; }
-body { position: absolute; }
-body{
+html {
+  overflow-y: scroll;
+}
+body {
+  position: absolute;
   align-items: center;
   justify-content: center;
   max-height: max-content;
   background: #ffffff;
 }
-nav{
+nav {
   z-index: 100;
   background: #bdfffd;
   width: 100%;
   height: 80px;
   position: fixed;
   top: 0;
-
 }
 
-label.logo{
+label.logo {
   align-items: flex-start;
   font-size: 35px;
   font-weight: 600;
@@ -35,11 +36,11 @@ label.logo{
   line-height: 80px;
 }
 
-nav ul{
+nav ul {
   float: right;
   margin-right: 40px;
 }
-nav li{
+nav li {
   display: inline-block;
   margin: 0 8px;
   line-height: 80px;
@@ -53,11 +54,12 @@ nav a {
   border-radius: 3px;
 }
 
-a.active,a:hover{
+nav a.active,
+a:hover {
   border: 1px solid rgb(0, 0, 0);
   transition: 0.5s;
 }
-.checkbtn{
+.checkbtn {
   font-size: 30px;
   color: rgb(0, 0, 0);
   float: right;
@@ -66,230 +68,222 @@ a.active,a:hover{
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
-@media (max-width: 952px){
+@media (max-width: 952px) {
+  .second,
+  .sec__img,
+  .head {
+    width: 100%;
+    margin: auto;
+  }
+  .sec__img {
+    width: 100%;
+  }
 
-
-.second, .sec__img , .head{
-  width: 100%;
-  margin: auto;
-}
-  .sec__img{
-  width: 100%
-}
-
-
-  label.logo{
+  label.logo {
     font-size: 30px;
     padding-left: 50px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 16px;
   }
- 
-  #check:checked  ~ .text-flow li span::after{
+
+  #check:checked ~ .text-flow li span::after {
     content: "";
     position: absolute;
     left: 0;
     height: 100%;
     width: 100%;
-    
+
     border-left: 2px solid #000000;
     animation: typing 3s steps(10) infinite;
     background: #272848;
-  } 
+  }
 }
 
-
-
-.avt{
+.avt {
   position: absolute;
   width: 60px;
   right: 2px;
 }
 
-.second{
-height: 80vh;
+.second {
+  height: 80vh;
   background: #9ffff5;
 }
-  .sec__img{
-    margin: auto;
-    padding: 80px;
-    width: 40%;
-  }
-  .container{
-    display: flex;
-  }
+.sec__img {
+  margin: auto;
+  padding: 80px;
+  width: 40%;
+}
+.container {
+  display: flex;
+}
 
-  .head{
-    position: relative;
+.head {
+  position: relative;
   display: flex;
   flex-direction: column;
-justify-content: center;
-padding-left: 200px;
-top: -100px;
-  }
+  justify-content: center;
+  padding-left: 200px;
+  top: -100px;
+}
 
-  .head h2{
-    font-size: 58px;
+.head h2 {
+  font-size: 58px;
   text-align: center;
-    font-weight: 500;
-    padding-right: 100%;
-  }
-  .head h3{
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-    padding-right: 100%;
-    width: max-content;
-  }
-  .animation{
-    position: relative;
-    right: 23px;
-  }
-  .animation .text-hold{
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-    font-weight: 400;
-  }
-  .animation .text-flow{
-    margin-left: 25px;
-    height: 90px;
-    line-height: 80px;
-    overflow: hidden;
-  }
-  .text-flow li{
-    list-style: none;
-    color: #5e6973;
-    font-size: 40px;
-    font-weight: 500;
-    position: relative;
-    top: -10%;
+  font-weight: 500;
+  padding-right: 100%;
+}
+.head h3 {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  padding-right: 100%;
+  width: max-content;
+}
+.animation {
+  position: relative;
+  right: 23px;
+}
+.animation .text-hold {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 400;
+}
+.animation .text-flow {
+  margin-left: 25px;
+  height: 90px;
+  line-height: 80px;
+  overflow: hidden;
+}
+.text-flow li {
+  list-style: none;
+  color: #5e6973;
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  top: -10%;
 
-    animation: slide 12s steps(4) infinite;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
   }
-  @keyframes slide {
-    100%{
-      top: -360px;
-    }
+}
+.text-flow li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.text-flow li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 100%;
+  width: 100%;
+  background: #9ffff5;
+  border-left: 2px solid #000000;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
   }
-  .text-flow li span{
-    position: relative;
-    margin: 5px 0;
-    line-height: 90px;
-  }
-  .text-flow li span::after{
-    content: "";
-    position: absolute;
+  100% {
     left: 0;
-    top: 2px;
-    height: 100%;
-    width: 100%;
-    background: #9ffff5;
-    border-left: 2px solid #000000;
-    animation: typing 3s steps(10) infinite;
   }
-  @keyframes typing {
-    40%, 60%{
-      left: calc(100% + 30px);
-    }
-    100%{
-      left: 0;
-    }
-  }
+}
 
-  
-
-  .third__container h1{
-    text-align: center;
-    font-size: 50px;
-    padding: 20px;
-  }
-
-  .wrap{
-    display: flex;
-    padding: 20px;
-   justify-content: space-around;
-  }
-  .wrap img{
-  
-    width: 20%;
-    border: 1px solid black;
-    border-radius: 50%;
-  }
-  .wrap span{
-    padding: 60px;
-    width: 50%;
-  }
-
-  .fourth{
-    background: #6ABEA7;
-  }
-.fourth h1{    text-align: center;
+.third__container h1 {
+  text-align: center;
   font-size: 50px;
   padding: 20px;
 }
 
-  .exp__grid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px;
-    margin: auto;
-    width: 90%;
- }
-  
- .card {
-   
-   display: flex;
-   flex-direction: column;
-     flex: 0 1 24%;
-    border: 2px solid black;
-    height: 30vh;
-    padding: 20px;
-    margin: auto;
-    border-radius: 10px;
-    
-    }
+.wrap {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+.wrap img {
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.wrap span {
+  font-size: 22px;
+  padding: 60px;
+  width: 50%;
+}
 
- .card i{
+.fourth {
+  background: #6abea7;
+}
+.fourth h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.exp__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  margin: auto;
+  width: 90%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 24%;
+  border: 2px solid rgba(34, 33, 33, 0.5);
+  height: 30vh;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.card i {
   margin: auto;
   padding-bottom: 40px;
- }
- .card span{
-   align-items: center;
-   margin: auto;
-   text-transform: uppercase;
-   font-size: 40px;
-   line-height: 38px;
- }
+}
+.card span {
+  align-items: center;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 38px;
+}
 
- #ind span{
-   text-align: center;
-   margin: auto;
-  
- }
- 
+#ind span {
+  text-align: center;
+  margin: auto;
+}
 
- .card i:hover{
+.card i:hover {
   color: #9ffff5;
   text-shadow: 0 0 15px #3b5998;
   transition: all 0.5s ease;
-   transform: scale(1.5);
- }
+  transform: scale(1.5);
+}
 
- .fifth{
-   background: #ffffff;
- }
+.fifth {
+  background: #ffffff;
+}
 
- .fifth h1{    text-align: center;
+.fifth h1 {
+  text-align: center;
   font-size: 50px;
   padding: 20px;
 }
-
-
 
 .cards {
   display: grid;
@@ -303,13 +297,13 @@ top: -100px;
 .howercard {
   position: relative;
   display: block;
-  height: 100%;  
-  border-radius:40px;
+  height: 100%;
+  border-radius: 40px;
   overflow: hidden;
   text-decoration: none;
 }
 
-.card__image {      
+.card__image {
   width: 100%;
   height: auto;
 }
@@ -319,11 +313,11 @@ top: -100px;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;      
-  border-radius: calc(var(--curve) * 1px);    
-  background-color: #fff;      
+  z-index: 1;
+  border-radius: 40px;
+  background-color: #fff;
   transform: translateY(100%);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .howercard:hover .card__overlay {
@@ -336,10 +330,10 @@ top: -100px;
   align-items: center;
   gap: 2em;
   padding: 2em;
-  border-radius: 40px 0 0 0;    
+  border-radius: 40px 0 0 0;
   background-color: #fff;
   transform: translateY(-100%);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .card__arc {
@@ -347,14 +341,14 @@ top: -100px;
   height: 80px;
   position: absolute;
   bottom: 100%;
-  right: 0;      
+  right: 0;
   z-index: 1;
 }
 
 .card__arc path {
   fill: #fff;
   d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}       
+}
 
 .howercard:hover .card__header {
   transform: translateY(0);
@@ -363,126 +357,127 @@ top: -100px;
 .card__thumb {
   flex-shrink: 0;
   width: 50px;
-  height: 50px;      
-  border-radius: 50%;      
+  height: 50px;
+  border-radius: 50%;
 }
 
 .card__title {
   font-size: 1em;
-  margin: 0 0 .3em;
-  color: #6A515E;
+  margin: 0 0 0.3em;
+  color: #6a515e;
 }
-
-
 
 .card__description {
   padding: 0 2em 2em;
   margin: 0;
   color: #000000;
-  font-family: "MockFlowFont";   
+  font-family: "MockFlowFont";
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-}    
-
-.seventh{
-  margin: auto;
-  background: #5E6973;
 }
 
-.seventh h1{
+.seventh {
+  margin: auto;
+  background: #5e6973;
+}
+
+.seventh h1 {
   text-align: center;
   font-size: 50px;
   padding-top: 10px;
 }
 
-.seventh__container{
+.seventh__container {
   margin: auto;
   width: auto;
   display: flex;
   justify-content: space-around;
 }
 
-.seventh__container img{
+.seventh__container img {
   padding-top: -30px;
   border: 1px solid black;
   border-radius: 80%;
   width: 10%;
-  
 }
-.social i{
+.social i {
   margin: auto;
 
   padding-top: 80px;
   padding-left: 80px;
 }
 
-.btn{
+.btn {
   padding-top: 65px;
 }
-button{
+button {
   margin: auto;
   width: 180px;
   background: black;
   color: white;
-  cursor: pointer ;
+  cursor: pointer;
   font-size: 20px;
   padding: 20px;
   border-radius: 10px;
 }
-.last{
+.last {
   border: 2px solid black;
   background-color: #31363a;
 }
-.last h3{
+.last h3 {
   text-align: center;
 }
 
-.sixth h1{
+.sixth h1 {
   width: 100%;
   text-align: center;
   font-size: 50px;
   padding-top: 10px;
 }
- .sixth{
-  background: #6ABEA7;
+.sixth {
+  background: #6abea7;
   padding-bottom: 40px;
- }
+}
 
-.sixth__container{
-  
+.sixth__container {
   display: flex;
   margin: auto;
   column-gap: 20px;
   justify-content: center;
 }
- .rr, .cc{
-display: flex;
-flex-direction: column;
+.rr,
+.cc {
+  display: flex;
+  flex-direction: column;
 }
-.rr span{
+.rr span {
   margin: auto;
   font-size: 30px;
 }
-progress{
+progress {
   padding: 30px;
   width: 400px;
   margin: auto;
 }
-
-@media (max-width: 858px){
-
-.sec__img{
-  width: 30%;
+.seventh__container a,
+i {
+  color: #000000;
+  outline: none;
+  border: none;
 }
 
-  .checkbtn{
+@media (max-width: 858px) {
+  .sec__img {
+    width: 30%;
+  }
+
+  .checkbtn {
     display: block;
     cursor: pointer;
-
   }
-  ul{
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -492,30 +487,32 @@ progress{
     text-align: center;
     transition: all 0.5s;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  a:hover,a.active{
+  a:hover,
+  a.active {
     background: none;
-    color:#6D71f9;
+    color: #6d71f9;
   }
-  #check:checked ~ ul{
-    left: 0; 
+  #check:checked ~ ul {
+    left: 0;
   }
 
-  #check:checked  ~ .text-flow li span::after{
+  #check:checked ~ .text-flow li span::after {
     content: "";
     position: absolute;
     left: 0;
     height: 100%;
     width: 100%;
-    
+
     border-left: 2px solid #000000;
     animation: typing 3s steps(10) infinite;
     background: #9ffff5;
-  }  .avt{
+  }
+  .avt {
     display: none;
   }
 }
