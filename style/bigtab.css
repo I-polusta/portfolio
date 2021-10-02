@@ -1,0 +1,149 @@
+@media (max-width: 1024px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  #check:checked ~ .text-flow li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+    background: #272848;
+  }
+  /* navbar starts */
+
+  /* navbar ends */
+  /* animation section starts */
+  .second {
+    margin: auto;
+    height: 75vh;
+    width: 100%;
+  }
+
+  .second h2,
+  .second h3 {
+    font-size: 1.6em;
+  }
+  .second span {
+    font-size: 0.6em;
+  }
+
+  .sec__img {
+    margin: auto;
+    width: 80%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .animation {
+    position: relative;
+    top: -30px;
+    right: 28px;
+  }
+
+  .text-flow {
+    position: relative;
+    left: 1px;
+    top: 10px;
+    font-size: 0.8em;
+  }
+
+  /* animation section ends */
+
+  /* About me section */
+  .third {
+    margin: auto;
+  }
+
+  .third__container {
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+  }
+  .third__container span {
+    position: relative;
+    margin: auto;
+    top: -10px;
+    padding: 1px;
+    width: 100%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .third__container img {
+    position: relative;
+    top: -40px;
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 40px;
+  }
+  /* about me ends */
+
+  /* experience starts here */
+  .exp__grid {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fifth {
+    height: max-content;
+    margin: auto;
+    width: 100%;
+  }
+
+  .fifth ul {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    left: 10px;
+  }
+  .fifth li {
+    width: 100%;
+  }
+  /* skills starts here */
+  .sixth {
+    margin: auto;
+    padding: 40px;
+  }
+  /* skills ends here */
+
+  /* contacts starts here */
+  .seventh {
+    margin: auto;
+    width: 100%;
+  }
+  .seventh__container {
+    padding-bottom: 6px;
+    display: flex;
+  }
+  .seventh__container img {
+    display: none;
+  }
+
+  .social {
+    margin: auto;
+    padding: 1px;
+  }
+  .social i {
+    padding: 1px;
+    margin: auto;
+  }
+  .btn {
+    margin: auto;
+    padding: 1px;
+  }
+  /* Contacts Ends here */
+}

@@ -1,0 +1,90 @@
+.second {
+  height: 75vh;
+  background: #9ffff5;
+}
+.sec__img {
+  margin: auto;
+  padding: 80px;
+  width: 40%;
+}
+.container {
+  display: flex;
+}
+
+.head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 200px;
+  top: -100px;
+}
+
+.head h2 {
+  font-size: 58px;
+  text-align: center;
+  font-weight: 500;
+  padding-right: 100%;
+}
+.head h3 {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  padding-right: 100%;
+  width: max-content;
+}
+.animation {
+  position: relative;
+  right: 23px;
+}
+.animation .text-hold {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 400;
+}
+.animation .text-flow {
+  margin-left: 25px;
+  height: 90px;
+  line-height: 80px;
+  overflow: hidden;
+}
+.text-flow li {
+  list-style: none;
+  color: #5e6973;
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  top: -10%;
+
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.text-flow li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.text-flow li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 100%;
+  width: 100%;
+  background: #9ffff5;
+  border-left: 2px solid #000000;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}

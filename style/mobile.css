@@ -1,0 +1,162 @@
+@media (max-width: 500px) {
+  /* navbar starts */
+  .checkbtn {
+    display: block;
+    cursor: pointer;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 200vh;
+    background: #9ffff5;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #6d71f9;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .avt {
+    display: none;
+  }
+  /* navbar ends */
+  /* animation section starts */
+  .second {
+    margin: auto;
+    height: 95vh;
+    width: 100%;
+  }
+
+  .second h2,
+  .second h3 {
+    font-size: 1.6em;
+  }
+  .second span {
+    font-size: 0.6em;
+  }
+
+  .sec__img {
+    margin: auto;
+    width: 80%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .animation {
+    position: relative;
+    top: -30px;
+    text-align: center;
+  }
+
+  .text-flow {
+    position: relative;
+    left: 1px;
+    top: 10px;
+    font-size: 0.8em;
+  }
+
+  /* animation section ends */
+
+  /* About me section */
+  .third {
+    margin: auto;
+  }
+
+  .third__container {
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+  }
+  .third__container span {
+    position: relative;
+    margin: auto;
+    top: -10px;
+    padding: 1px;
+    width: 100%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .third__container img {
+    position: relative;
+    top: -40px;
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 40px;
+  }
+  /* about me ends */
+
+  /* experience starts here */
+  .exp__grid {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin: 40px;
+  }
+
+  /* experience ends here */
+  .fifth {
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards li {
+    width: 2%;
+    height: 100%;
+    background: #ffffff;
+    padding: 50px;
+  }
+
+  /* skills starts here */
+  .sixth {
+    margin: auto;
+    padding: 40px;
+  }
+  /* skills ends here */
+
+  /* contacts starts here */
+  .seventh {
+    margin: auto;
+    width: 100%;
+  }
+  .seventh__container {
+    padding-bottom: 6px;
+    display: flex;
+  }
+  .seventh__container img {
+    display: none;
+  }
+
+  .social {
+    margin: auto;
+    padding: 1px;
+  }
+  .social i {
+    padding: 1px;
+    margin: auto;
+  }
+  .btn {
+    margin: auto;
+    padding: 1px;
+  }
+  /* Contacts Ends here */
+}

@@ -1,0 +1,58 @@
+.seventh {
+  margin: auto;
+  background: #5e6973;
+}
+
+.seventh h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 10px;
+}
+
+.seventh__container {
+  margin: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.seventh__container img {
+  padding-top: -30px;
+  border: 1px solid black;
+  border-radius: 80%;
+  width: 10%;
+}
+.social i {
+  margin: auto;
+
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+.btn {
+  padding-top: 65px;
+}
+button {
+  margin: auto;
+  width: 180px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.last {
+  border: 2px solid black;
+  background-color: #31363a;
+}
+.last h3 {
+  text-align: center;
+}
+
+.seventh__container a,
+i {
+  color: #000000;
+  outline: none;
+  border: none;
+}

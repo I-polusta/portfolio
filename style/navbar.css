@@ -1,0 +1,59 @@
+nav {
+  z-index: 100;
+  background: #bdfffd;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+
+label.logo {
+  align-items: flex-start;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  padding: 0 100px;
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+nav a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+nav a.active,
+a:hover {
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.avt {
+  position: absolute;
+  width: 60px;
+  right: 2px;
+}
