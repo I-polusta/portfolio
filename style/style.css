@@ -18,6 +18,8 @@ body {
   max-height: max-content;
   background: #ffffff;
 }
+
+/* navbar css begins here */
 nav {
   z-index: 100;
   background: #bdfffd;
@@ -59,6 +61,8 @@ a:hover {
   border: 1px solid rgb(0, 0, 0);
   transition: 0.5s;
 }
+
+/* for responsive navbar */
 .checkbtn {
   font-size: 30px;
   color: rgb(0, 0, 0);
@@ -77,6 +81,8 @@ a:hover {
   width: 60px;
   right: 2px;
 }
+
+/* next section starts here */
 
 .second {
   height: 75vh;
@@ -113,6 +119,8 @@ a:hover {
   padding-right: 100%;
   width: max-content;
 }
+
+/* typing animation */
 .animation {
   position: relative;
   right: 23px;
@@ -138,6 +146,7 @@ a:hover {
 
   animation: slide 12s steps(4) infinite;
 }
+/* animation for step up */
 @keyframes slide {
   100% {
     top: -360px;
@@ -159,6 +168,7 @@ a:hover {
   border-left: 2px solid #000000;
   animation: typing 3s steps(10) infinite;
 }
+/* animation for steps */
 @keyframes typing {
   40%,
   60% {
@@ -169,6 +179,7 @@ a:hover {
   }
 }
 
+/* About US section begins here */
 .third__container {
   padding: 40px;
   margin: auto;
@@ -195,7 +206,7 @@ a:hover {
   padding: 60px;
   width: 50%;
 }
-
+/* experience section begins here */
 .fourth {
   background: #6abea7;
 }
@@ -249,11 +260,12 @@ a:hover {
 
 .card i:hover {
   color: #9ffff5;
-  text-shadow: 0 0 15px #3b5998;
+  text-shadow: 0 0 15px #030b1d;
   transition: all 0.5s ease;
   transform: scale(1.5);
 }
 
+/* Project section begins here */
 .fifth {
   background: #ffffff;
 }
@@ -315,19 +327,6 @@ a:hover {
   transition: 0.2s ease-in-out;
 }
 
-.card__arc {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  z-index: 1;
-}
-
-.card__arc path {
-  fill: #fff;
-}
-
 .howercard:hover .card__header {
   transform: translateY(0);
 }
@@ -354,6 +353,49 @@ a:hover {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+/* skills section begins here */
+
+.sixth h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 10px;
+}
+.sixth {
+  background: #6abea7;
+  padding-bottom: 40px;
+}
+
+.sixth__container {
+  display: flex;
+  margin: auto;
+  column-gap: 20px;
+  justify-content: center;
+}
+.rr,
+.cc {
+  display: flex;
+  flex-direction: column;
+}
+.rr span {
+  margin: auto;
+  font-size: 30px;
+}
+progress {
+  padding: 30px;
+  width: 400px;
+  margin: auto;
+}
+
+/* contact footer starts here */
+
+.seventh__container a,
+i {
+  color: #000000;
+  outline: none;
+  border: none;
 }
 
 .seventh {
@@ -408,43 +450,7 @@ button {
   text-align: center;
 }
 
-.sixth h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 50px;
-  padding-top: 10px;
-}
-.sixth {
-  background: #6abea7;
-  padding-bottom: 40px;
-}
-
-.sixth__container {
-  display: flex;
-  margin: auto;
-  column-gap: 20px;
-  justify-content: center;
-}
-.rr,
-.cc {
-  display: flex;
-  flex-direction: column;
-}
-.rr span {
-  margin: auto;
-  font-size: 30px;
-}
-progress {
-  padding: 30px;
-  width: 400px;
-  margin: auto;
-}
-.seventh__container a,
-i {
-  color: #000000;
-  outline: none;
-  border: none;
-}
+/* mobile responsive */
 
 @media (max-width: 500px) {
   /* navbar starts */
@@ -609,6 +615,8 @@ i {
   /* Contacts Ends here */
 }
 
+/* big tabs/ mini laptops responsive */
+
 @media (max-width: 1024px) {
   label.logo {
     font-size: 30px;
@@ -759,6 +767,8 @@ i {
   /* Contacts Ends here */
 }
 
+/* tab responsive */
+
 @media (max-width: 800px) {
   .checkbtn {
     display: block;
@@ -841,3 +851,5 @@ i {
 
   /* animation section ends */
 }
+
+/* Code ends */
